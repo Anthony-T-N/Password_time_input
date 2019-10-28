@@ -2,6 +2,7 @@
 ![Python](https://img.shields.io/badge/python-%3E%3D3-brightgreen.svg)
 ![version](https://img.shields.io/badge/version-0.0.0-yellow.svg)
 ![support](https://img.shields.io/badge/OS-Windows-orange.svg)
+[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Anthony-T-N/Password_time_input)
 
 # Password_time_input
 
