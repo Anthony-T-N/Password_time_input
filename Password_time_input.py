@@ -1,22 +1,46 @@
 import time;
+import random;
 
-localTime = time.localtime(time.time());
-localTime_str = str(localTime);
-localTime_str = localTime_str.strip("time.struct_time()");
-# Now a list
-localTime_str = localTime_str.split(" ");
-print(localTime_str);
+todays_password = ("0");
+current_item_1 = ("");
+current_item_2 = ("");
 
-x = 0;
-z = 0;
-variable_1 = 0;
-variable_2 = 0;
-for i in localTime_str:
-  i = i.split('=', 1)[-1];
-  i = i[:-1];
-  print(i);
-  if (x == 2):
-    variable_1 = i;
-  if (x == 3):
-    variable_2 = i;
-  x = x + 1;
+def local_time_extraction():
+    localTime = time.localtime(time.time());
+    localTime_str = str(localTime);
+    localTime_str = localTime_str.strip("time.struct_time()");
+    # Now a list
+    localTime_str = localTime_str.split(" ");
+    print(localTime_str);
+
+    x = 0;
+    z = 0;
+    variable_1 = 0;
+    variable_2 = 0;
+    random_element_1 = random.randint(0, 4);
+    random_element_2 = random.randint(0, 4);
+    global current_item_1;
+    global current_item_2;
+    for i in localTime_str:
+        current_item = i.rsplit('=', 1);
+        current_item = str(current_item[:-1]);
+        i = i.split('=', 1)[-1];
+        # Removes comma from each element in list ???
+        i = i[:-1];
+        print(i);
+        if (x == random_element_1):
+            variable_1 = i;
+            current_item_1 = current_item
+            print(current_item, x);
+        if (x == random_element_2):
+            variable_2 = i;
+            current_item_2 = current_item
+            print(current_item, x);
+        x = x + 1;
+    calculations(variable_1, variable_2)
+
+def calculations(var1, var2):
+    var1 = int(var1);
+    var2 = int(var2);
+    global todays_password;
+    todays_password = str(var1 + var2);
