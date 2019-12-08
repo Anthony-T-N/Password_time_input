@@ -44,3 +44,13 @@ def calculations(var1, var2):
     var2 = int(var2);
     global todays_password;
     todays_password = str(var1 + var2);
+
+def user_key_input():
+    user_input = input("Enter today's password: ");
+    return user_input;
+
+def main():
+    """
+    Begin
+    """
+    user_input = user_key_input();
