@@ -54,3 +54,4 @@ def main():
     Begin
     """
     user_input = user_key_input();
+    local_time_extraction();
