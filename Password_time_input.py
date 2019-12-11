@@ -58,3 +58,5 @@ def main():
     user_input = user_key_input();
     local_time_extraction();
     print("Hint: ", current_item_1, current_item_2);
+    user_input = user_key_input();
+    
