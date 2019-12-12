@@ -64,4 +64,8 @@ def main():
             break;
         else:
             number_of_attempts = (number_of_attempts + 1);
+            if (number_of_attempts == 4):
+                print("Too many failed attempts");
+                print("Closing...");
+                break;
     
