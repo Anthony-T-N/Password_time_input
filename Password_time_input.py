@@ -71,4 +71,7 @@ def main():
             print("Invalid password. Please try again");
             print("Attempt: ", number_of_attempts);
             user_input = user_key_input()
+
+if __name__ == '__main__':
+    main();
     
