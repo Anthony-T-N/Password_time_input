@@ -40,6 +40,11 @@ def local_time_extraction():
     calculations(variable_1, variable_2)
 
 def calculations(var1, var2):
+    """ Calculations function.
+
+    Function that performs basic addition to the specificed variables.
+
+    """
     var1 = int(var1);
     var2 = int(var2);
     global todays_password;
