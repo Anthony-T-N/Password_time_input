@@ -6,6 +6,11 @@ current_item_1 = ("");
 current_item_2 = ("");
 
 def local_time_extraction():
+    """ Local time extraction function.
+
+    Function that extracts the local time and divides the stored string into components.
+
+    """
     localTime = time.localtime(time.time());
     localTime_str = str(localTime);
     localTime_str = localTime_str.strip("time.struct_time()");
