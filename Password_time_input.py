@@ -56,6 +56,11 @@ def calculations(var1, var2):
     todays_password = str(var1 + var2);
 
 def user_key_input():
+     """ User Key Input Function.
+
+    Function that returns user's input.
+
+    """
     user_input = input("Enter today's password: ");
     return user_input;
 
