@@ -84,6 +84,7 @@ def main():
                 print("Too many failed attempts");
                 print("Closing...");
                 break;
+               #exit(0)
             print("Invalid password. Please try again");
             print("Attempt: ", number_of_attempts);
             user_input = user_key_input()
