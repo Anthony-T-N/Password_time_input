@@ -6,4 +6,6 @@
 
 # Password_time_input
 
-Work in progress
+Proof of concept.
+
+A script that displays a login prompt that accepts generated passwords based on the date.
