@@ -8,4 +8,4 @@
 
 Proof of concept.
 
-A script that displays a login prompt that accepts generated passwords based on the date.
+A script that displays a login prompt that accepts generated passwords based on the current date.
