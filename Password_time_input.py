@@ -2,6 +2,8 @@
 
 Proof of concept.
 
+A script that displays a login prompt that accepts generated passwords based on the current date.
+
 """
 
 __author__ = 'Anthony T Nguyen'
