@@ -31,7 +31,7 @@ def local_time_extraction():
     print(localTime_str);
 
     x = 0;
-    z = 0;
+    # z = 0;
     variable_1 = 0;
     variable_2 = 0;
     random_element_1 = random.randint(0, 4);
