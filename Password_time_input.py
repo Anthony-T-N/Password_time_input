@@ -13,6 +13,7 @@ __date__ = '16.10.2019'
 import time;
 import random;
 
+# Global variables.
 todays_password = ("0");
 current_item_1 = ("");
 current_item_2 = ("");
