@@ -92,7 +92,7 @@ def main():
             break;
         else:
             number_of_attempts = (number_of_attempts + 1);
-            # Limits the number of password attempts.
+            # Limits the number of password entry attempts.
             if (number_of_attempts == 4):
                 print("Too many failed attempts");
                 print("Closing...");
