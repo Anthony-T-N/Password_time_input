@@ -10,8 +10,8 @@ __author__ = 'Anthony T Nguyen'
 __version__ = '1.0.0'
 __date__ = '16.10.2019'
 
-import time;
-import random;
+import time
+import random
 
 # Global variables.
 todays_password = ("0");
