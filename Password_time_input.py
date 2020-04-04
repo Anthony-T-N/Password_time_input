@@ -24,7 +24,7 @@ def local_time_extraction():
     Function that extracts the local time and divides the stored string into components.
 
     """
-    localTime = time.localtime(time.time());
+    localTime = time.localtime(time.time())
     localTime_str = str(localTime);
     localTime_str = localTime_str.strip("time.struct_time()")
     # Now a list
@@ -48,12 +48,12 @@ def local_time_extraction():
         if (x == random_element_1):
             variable_1 = i
             current_item_1 = current_item
-            print(current_item, x);
+            print(current_item, x)
         if (x == random_element_2):
             variable_2 = i;
             current_item_2 = current_item
-            print(current_item, x);
-        x = x + 1;
+            print(current_item, x)
+        x = x + 1
     calculations(variable_1, variable_2)
 
 def calculations(var1, var2):
@@ -62,10 +62,10 @@ def calculations(var1, var2):
     Function that performs basic addition to the specificed variables.
 
     """
-    var1 = int(var1);
-    var2 = int(var2);
-    global todays_password;
-    todays_password = str(var1 + var2);
+    var1 = int(var1)
+    var2 = int(var2)
+    global todays_password
+    todays_password = str(var1 + var2)
 
 def user_key_input():
      """ User Key Input Function.
@@ -73,8 +73,8 @@ def user_key_input():
     Function that returns user's input.
 
     """
-    user_input = input("Enter today's password: ");
-    return user_input;
+    user_input = input("Enter today's password: ")
+    return user_input
 
 def main():
     """
