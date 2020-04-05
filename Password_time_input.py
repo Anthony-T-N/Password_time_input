@@ -82,26 +82,26 @@ def main():
     """
     global current_item_1;
     global current_item_2;
-    local_time_extraction();
-    number_of_attempts = 0;
-    print("Hint: ", current_item_1, current_item_2);
-    user_input = user_key_input();
+    local_time_extraction()
+    number_of_attempts = 0
+    print("Hint: ", current_item_1, current_item_2)
+    user_input = user_key_input()
     while True:
         if (user_input == todays_password):
-            print("Access Granted");
+            print("Access Granted")
             break;
         else:
-            number_of_attempts = (number_of_attempts + 1);
+            number_of_attempts = (number_of_attempts + 1)
             # Limits the number of password entry attempts.
             if (number_of_attempts == 4):
                 print("Too many failed attempts");
-                print("Closing...");
+                print("Closing...")
                 break;
                #exit(0)
-            print("Invalid password. Please try again");
-            print("Attempt: ", number_of_attempts);
+            print("Invalid password. Please try again")
+            print("Attempt: ", number_of_attempts)
             user_input = user_key_input()
 
 if __name__ == '__main__':
-    main();
+    main()
     
