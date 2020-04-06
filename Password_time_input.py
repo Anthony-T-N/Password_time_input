@@ -80,8 +80,8 @@ def main():
     """
     Begin
     """
-    global current_item_1;
-    global current_item_2;
+    global current_item_1
+    global current_item_2
     local_time_extraction()
     number_of_attempts = 0
     print("Hint: ", current_item_1, current_item_2)
@@ -94,7 +94,7 @@ def main():
             number_of_attempts = (number_of_attempts + 1)
             # Limits the number of password entry attempts.
             if (number_of_attempts == 4):
-                print("Too many failed attempts");
+                print("Too many failed attempts")
                 print("Closing...")
                 break;
                #exit(0)
