@@ -50,7 +50,7 @@ def local_time_extraction():
             current_item_1 = current_item
             print(current_item, x)
         if (x == random_element_2):
-            variable_2 = i;
+            variable_2 = i
             current_item_2 = current_item
             print(current_item, x)
         x = x + 1
@@ -89,14 +89,14 @@ def main():
     while True:
         if (user_input == todays_password):
             print("Access Granted")
-            break;
+            break
         else:
             number_of_attempts = (number_of_attempts + 1)
             # Limits the number of password entry attempts.
             if (number_of_attempts == 4):
                 print("Too many failed attempts")
                 print("Closing...")
-                break;
+                break
                #exit(0)
             print("Invalid password. Please try again")
             print("Attempt: ", number_of_attempts)
